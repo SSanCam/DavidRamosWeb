@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio de David Ramos, Director de Fotografía. Reels, proyectos y contacto.">
+  <meta name="keywords" content="director de fotografía, cinematografía, reels, portfolio, David Ramos">
+  <meta name="author" content="David Ramos">
+
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="David Ramos | Director de Fotografía">
+  <meta property="og:description" content="Portfolio de David Ramos, Director de Fotografía.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://davidramos.github.io">
+  <meta property="og:image" content="img/og-image.jpg">
+
+  <title>David Ramos | Director de Fotografía</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Header inyectado por JS -->
+  <header id="site-header"></header>
+
+  <!-- Contenido principal -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="hero__container">
+        <h1 id="hero-titulo" class="hero__titulo">David Ramos</h1>
+        <p class="hero__subtitulo">Director de Fotografía</p>
+        <a href="proyectos.html" class="hero__cta" aria-label="Ver proyectos de David Ramos">
+          Ver Proyectos
+        </a>
+      </div>
+    </section>
+
+    <!-- Showreel destacado -->
+    <section class="showreel" aria-labelledby="showreel-titulo">
+      <div class="showreel__container">
+        <h2 id="showreel-titulo" class="showreel__titulo">Showreel</h2>
+        <div class="showreel__video-wrapper">
+          <iframe
+            class="showreel__video"
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Showreel David Ramos - Director de Fotografía"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos destacados -->
+    <section class="proyectos-destacados" aria-labelledby="proyectos-titulo">
+      <div class="proyectos-destacados__container">
+        <h2 id="proyectos-titulo" class="proyectos-destacados__titulo">Proyectos Destacados</h2>
+        <div class="proyectos-destacados__grid">
+
+          <article class="proyecto-card">
+            <div class="proyecto-card__video-wrapper">
+              <iframe
+                class="proyecto-card__video"
+                src="https://www.youtube.com/embed/VIDEO_ID_1"
+                title="Proyecto 1 - David Ramos"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="proyecto-card__info">
+              <h3 class="proyecto-card__titulo">Nombre del Proyecto</h3>
+              <p class="proyecto-card__descripcion">Breve descripción del proyecto.</p>
+            </div>
+          </article>
+
+          <article class="proyecto-card">
+            <div class="proyecto-card__video-wrapper">
+              <iframe
+                class="proyecto-card__video"
+                src="https://www.youtube.com/embed/VIDEO_ID_2"
+                title="Proyecto 2 - David Ramos"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="proyecto-card__info">
+              <h3 class="proyecto-card__titulo">Nombre del Proyecto</h3>
+              <p class="proyecto-card__descripcion">Breve descripción del proyecto.</p>
+            </div>
+          </article>
+
+        </div>
+        <a href="proyectos.html" class="proyectos-destacados__ver-mas" aria-label="Ver todos los proyectos">
+          Ver todos los proyectos
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer inyectado por JS -->
+  <footer id="site-footer"></footer>
+
+  <!-- JS -->
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
