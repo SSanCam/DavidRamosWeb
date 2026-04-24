@@ -25,6 +25,15 @@ main {
   flex: 1;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* HERO */
 .hero {
   display: flex;
@@ -110,13 +119,13 @@ main {
 /* FOOTER */
 footer {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 2rem 1rem;
   font-size: 0.8rem;
   color: #666;
 }
 
-/* MOBILE */
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
   .hero {
