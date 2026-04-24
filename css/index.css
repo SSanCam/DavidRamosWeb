@@ -1,81 +1,67 @@
-
-.home main {
-  display: flex;
-}
-
-
-
-/* hero */
+/* HERO */
 .hero {
-  flex: 1;
-  height: auto;
-  min-height: 100vh;
-}
-
-/* hero image */
-.hero__bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* hero content */
-.hero__overlay {
+  height: 100vh;
   position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-/* hero overlay */
 .hero::after {
   content: "";
   position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.25);
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+
+  background-image: url('../img/248149115_421068402723504_7696982041293457869_n.jpg');
+  background-repeat: no-repeat;
+  background-size: auto; /* clave: no escala */
+  background-position: right center;
+
+  z-index: 0;
 }
 
-/* header */
-.home .site-header {
+/* OVERLAY OSCURO */
+.hero::before {
+  content: "";
   position: absolute;
-  width: 100%;
-  z-index: 10;
-  background: transparent;
-  border: none;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 1;
 }
 
-/* nav */
-.home .nav a {
-  color: #fff;
+/* CONTENIDO */
+.hero__overlay {
+  position: relative;
+  z-index: 2;
+
+  max-width: 700px;
+  padding: 0 2rem;
+
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* cta */
-.hero a {
-  margin-top: 1.8rem;
-  padding: 0.7rem 1.6rem;
-  background: rgba(0, 0, 0, 0.75);
-  color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.85);
-}
-
-.hero a:hover {
-  background: #000;
-  color: #fff;
-}
-
-/* text */
-.hero__overlay p {
-  max-width: 600px;
-  margin-top: 1rem;
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
+/* TEXTOS */
 .hero h1 {
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero__role {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+/* CTA */
+.hero a {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
 }
