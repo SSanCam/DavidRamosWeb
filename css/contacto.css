@@ -1,0 +1,103 @@
+main > h1 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+/* HERO */
+.contact-hero {
+  height: 40vh;
+  min-height: 200px;
+  max-height: 320px;
+}
+
+.contact-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.1);
+}
+
+/* TEXTO HERO */
+.contact-hero-overlay {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.contact-hero-overlay p {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+/* CONTENIDO */
+.contact {
+  max-width: 520px;
+  margin: 1.8rem auto; 
+}
+
+
+.contact-info {
+  width: 100%; 
+}
+
+/* TEXTOS */
+.contact-intro,
+.contact-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.7rem;
+}
+
+.contact-email {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.8rem;
+}
+
+/* EMAIL */
+.contact-email {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #000;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease;
+}
+
+.contact-email:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* SOCIAL */
+.contact-social {
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+}
+
+.contact-social a {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #666;
+  text-decoration: none;
+}
+
+.contact-social a:hover {
+  color: #000;
+}
+
+.contact-data a {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border 0.2s ease, color 0.2s ease;
+}
+
+.contact-data a:hover {
+  border-bottom: 1px solid #222;
+  color: #000;
+}
