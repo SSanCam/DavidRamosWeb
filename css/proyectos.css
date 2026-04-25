@@ -1,31 +1,4 @@
-/* CONTAINER */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-/* HEADER */
-.site-header {
-  padding: 2rem 1rem;
-}
-
-/* TITULO */
-.container header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.container h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.container p {
-  color: #666;
-}
-
-/* GRID PROYECTOS */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -39,16 +12,14 @@
   gap: 1rem;
 }
 
-/* IMAGENES (thumbnails) */
 .project img {
   width: 100%;
   display: block;
 }
 
-/* TEXTO */
 .project h3 {
   font-size: 0.8rem;
-  color: #666;
+  color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
@@ -56,10 +27,10 @@
 
 .project p {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
-/* NAV CATEGORIAS */
+/* NAV CATEGORÍAS */
 .project-nav ul {
   display: flex;
   justify-content: center;
@@ -68,82 +39,31 @@
 }
 
 .project-nav a {
-  text-decoration: none;
-  color: #666;
+  color: var(--color-text-muted);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .project-nav a:hover {
-  color: #000;
+  color: var(--color-text);
 }
 
-/* CATEGORIAS */
-.category {
-  margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 1px solid #ddd;
-}
-
-.category h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* BOTON VOLVER ARRIBA */
-.back-top {
-  text-decoration: none;
-  color: #000;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-left: 0.5rem;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.back-top:hover {
-  opacity: 1;
-}
-
-/* PAGE HEADER */
-.page-header {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.page-header h1 {
-  font-size: 1.5rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #666;
-}
-
-/* FOOTER */
-.site-footer {
-  margin-top: 4rem;
-  padding: 2rem 1rem;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #666;
-}
-
-/* MOBILE */
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
   .grid {
     grid-template-columns: 1fr;
   }
 
-  .landing-nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  .project-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem 1.5rem;
   }
 
-  .landing-nav a {
-    font-size: 0.85rem;
-    margin-bottom: 1.5rem;
+  .project-nav a {
+    font-size: 0.75rem;
   }
-
 }
