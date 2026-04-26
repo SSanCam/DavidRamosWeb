@@ -52,7 +52,7 @@
 }
 
 .project-nav a {
-  color: var(--color-text-muted);
+  color: var(--color-bg);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;

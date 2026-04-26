@@ -35,6 +35,10 @@
   color: var(--color-text);
 }
 
+.title-display {
+  margin-top: 2.5rem;
+}
+
 /* IMAGEN */
 .about-image {
   display: flex;

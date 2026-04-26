@@ -33,6 +33,14 @@
   filter: grayscale(100%);
 }
 
+.page-header {
+  margin-top: 4rem;
+}
+
+.title-display {
+  margin-top: 5rem;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
   .renting-grid {

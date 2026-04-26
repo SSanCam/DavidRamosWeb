@@ -1,12 +1,38 @@
 /* VARIABLES DE COLOR */
 :root {
-  --color-bg: #f2f2f2;
-  --color-text: #1a1a1a;
-  --color-text-muted: #666;
-  --color-text-light: #444;
-  --color-accent: #8a6a4a;
-  --color-black: #000;
-  --color-white: #fff;
+  /* Base */
+  --color-bg: #F2F2F2;
+  --color-text: #1A1A1A;
+  --color-text-muted: #8A8A8A;
+  --color-text-light: #444444;
+  --color-text-black: #000000;
+  --color-text-white: #FFFFFF;
+
+  /* Corporativos */
+  --color-primary: #2A9D8F;
+  --color-primary-dark: #1F7A70;
+  --color-primary-light: #6FCFC3;
+
+  --color-secondary: #F28C38;
+  --color-secondary-dark: #D96E1F;
+  --color-secondary-light: #F7B267;
+
+  /* Ocre */
+  --color-ocre: #C49A4A;
+  --color-ocre-dark: #9A7735;
+  --color-ocre-light: #E0B86A;
+
+  /* Tipografía */
+  --font-main: "Libre Franklin", Arial, sans-serif;
+  --font-display: "Limelight", cursive;
+}
+
+@font-face {
+  font-family: "Limelight";
+  src: url("fonts/Limelight-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* RESET */
@@ -22,15 +48,16 @@
 html,
 body {
   height: 100%;
+  font-family: var(--font-main);
+  font-weight: 300;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.5;
+  background-color: var(--color-text-light);
 }
 
 main {
@@ -58,14 +85,22 @@ a:hover {
 .hero {
   display: flex;
   justify-content: center;
-  padding: 3rem 1rem 2rem;
+  padding: 5rem 1rem 2.5rem;
 }
 
 .hero img {
-  width: 100%;
-  max-width: 1100px;
-  height: auto;
+  width: 800px;
   display: block;
+
+}
+
+/* TÍTULO PRINCIPAL */
+.site-title {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* NAVEGACIÓN */
@@ -82,7 +117,7 @@ a:hover {
 }
 
 .landing-nav a {
-  color: var(--color-text-muted);
+  color: var(--color-bg);
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -134,6 +169,29 @@ a:hover {
   color: var(--color-text);
 }
 
+.landing-intro p {
+  text-align: center;
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+}
+
+.landing-intro .page-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+}
+
+.title-display {
+  font-family: "Limelight", serif;
+  font-size: 1rem;
+  letter-spacing: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-text-dark);
+}
+
 /* PAGE HEADER */
 .page-header {
   margin-top: 1rem;
@@ -152,17 +210,19 @@ a:hover {
   margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid #ddd;
+  color: var(--color-text-black);
 }
 
 .category h2 {
   text-align: center;
   margin-bottom: 2rem;
+  color: var(--color-text-black);
 }
 
 /* BOTÓN VOLVER ARRIBA */
 .back-top {
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-bg);
   font-size: 1.3rem;
   font-weight: 600;
   margin-left: 0.5rem;
@@ -180,7 +240,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 7rem;
 }
 
 .social-links a {
@@ -215,7 +275,7 @@ footer {
   margin-top: 2rem;
   padding: 2rem 1rem;
   font-size: 0.8rem;
-  color: var(--color-text-muted);
+  color: var(--color-bg);
 }
 
 /* RESPONSIVE */
@@ -240,6 +300,15 @@ footer {
     margin-bottom: 0;
   }
 
+  .landing-intro h1 {
+    margin-left: 1rem;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
   /* tipografía */
   body {
     font-size: 0.95rem;
@@ -247,7 +316,8 @@ footer {
 
   /* redes sociales */
   .social-links {
-    gap: 1.2rem;
+    margin-top: 2%;
+    gap: 0.5rem;
   }
 
   .social-links a {
