@@ -2,7 +2,7 @@
 :root {
   /* Base */
   --color-bg: #F2F2F2;
-  --color-text: #1A1A1A;
+  --color-text: #060606;
   --color-text-muted: #8A8A8A;
   --color-text-light: #444444;
 
@@ -55,7 +55,7 @@ body {
   flex-direction: column;
   color: var(--color-text);
   line-height: 1.5;
-  background-color: var(--color-text-light);
+  background-color: var(--color-text);
 }
 
 main {
@@ -83,11 +83,11 @@ a:hover {
 .hero {
   display: flex;
   justify-content: center;
-  padding: 5rem 1rem 2.5rem;
+  margin-top: 2rem;
 }
 
 .hero img {
-  width: 800px;
+  width: 600px;
   display: block;
 
 }
@@ -103,11 +103,19 @@ a:hover {
 
 .title-display {
   font-family: "Limelight", serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 2em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--color-primary-dark);
+  color: var(--color-bg);
+  margin-bottom: 5rem;
+}
+
+.title-display h3 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  letter-spacing: 0.2em;
+  color: var(--color-text-muted);
 }
 
 /* NAVEGACIÓN */
@@ -115,6 +123,10 @@ a:hover {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
+}
+
+.landing-nav a.nav-inicio {
+  color: var(--color-secondary-dark);
 }
 
 .landing-nav ul {
