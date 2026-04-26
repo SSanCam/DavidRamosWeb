@@ -13,7 +13,7 @@
 }
 
 .about-text p {
-  color: var(--color-text-muted);
+  color: var(--color-bg);
   line-height: 1.6;
   margin-bottom: 1.2rem;
   font-size: 0.95rem;

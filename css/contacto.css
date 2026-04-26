@@ -1,5 +1,6 @@
 /* HERO */
 .contact-hero {
+  padding-top: 0.5rem;
   height: 40vh;
   min-height: 200px;
   max-height: 320px;
@@ -23,23 +24,18 @@
   width: 100%;
 }
 
-/* TEXTOS */
-.contact-intro,
-.contact-text {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-bottom: 0.7rem;
-}
-
 /* DATOS */
 .contact-data {
-  margin: 1rem 0;
+  margin: 1rem ;
 }
 
+.social-links {
+padding-top: 5rem;
+}
 /* EMAIL */
 .contact-email {
   display: inline-block;
-  padding: 0.8rem 1.5rem;
+  padding: rem 1.5rem;
   border: 1px solid var(--color-black);
   border-radius: 3px;
   color: var(--color-black);
