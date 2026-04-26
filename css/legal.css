@@ -1,0 +1,13 @@
+.legal-block {
+  margin-top: 3rem;
+  max-width: 700px;
+}
+
+.legal-block h2 {
+  margin-bottom: 1rem;
+}
+
+.legal-block p {
+  margin-bottom: 0.8rem;
+  color: var(--color-text-muted);
+}
