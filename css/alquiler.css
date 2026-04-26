@@ -7,18 +7,17 @@
 
 .renting-content {
   max-width: 60ch;
+  margin-top: 4rem;
 }
 
 .renting-intro {
   margin-bottom: 1.5rem;
 }
 
-.renting-highlights {
-  margin-bottom: 1.5rem;
-}
 
 .renting-highlights li {
-  margin-bottom: 0.5rem;
+  list-style: none;
+  margin-left: 2rem;
 }
 
 .renting-image img {
