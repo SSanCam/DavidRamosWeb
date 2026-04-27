@@ -8,13 +8,13 @@
   font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--color-secondary-dark);
+  color: var(--color-bg);
   margin-top: 0.4rem;
 }
 
 .project p {
   font-size: 0.85rem;
-  color: var(--color-primary-dark);
+  color: var(--color-text-light);
   line-height: 1.4;
 }
 
