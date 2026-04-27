@@ -108,7 +108,8 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   color: var(--color-bg);
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .title-display h3 {
@@ -281,24 +282,34 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.social-links a:hover img {
+  transform: scale(1.08);
 }
 
 .social-links img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  filter: grayscale(100%);
-  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.social-links a:hover img {
-  transform: scale(1.1);
-  filter: grayscale(0%);
+.social-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 60%;
+  height: 2px;
+  background-color: var(--color-secondary-dark);
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
 }
 
-.icon-instagram img {
-  transform: scale(0.75);
-  opacity: 0.9;
+.social-links a:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 /* FOOTER */
@@ -334,11 +345,6 @@ footer {
 
   .landing-intro h1 {
     margin-left: 1rem;
-  }
-
-  .hero img {
-    width: 100%;
-    height: auto;
   }
 
   /* tipografía */
