@@ -67,7 +67,8 @@
 }
 
 .project-nav a:hover {
-  color: var(--color-text);
+  color: var(--color-secondary-dark);
+  text-decoration: none;
 }
 
 /* RESPONSIVE */
