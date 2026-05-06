@@ -321,6 +321,19 @@ footer {
   color: var(--color-bg);
 }
 
+/* ACCESIBILIDAD: OCULTAR ELEMENTOS VISUALMENTE PERO MANTENERLOS DISPONIBLES PARA LECTORES DE PANTALLA */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
 
