@@ -1,4 +1,5 @@
 /* HERO */
+
 .hero {
   padding-top: 5rem;
 }
@@ -8,12 +9,14 @@
 }
 
 /* CONTENIDO */
+
 .contact {
   max-width: 520px;
   margin: 1.8rem auto;
 }
 
 /* INFO */
+
 .contact-info {
   width: 100%;
   text-align: center;
@@ -21,30 +24,18 @@
 }
 
 /* DATOS */
+
 .contact-data {
   text-align: center;
 }
 
 .contact p {
   text-align: center;
-  font-size: larger;
+  font-size: 1.05rem;
 }
+
+/* REDES SOCIALES */
 
 .social-links {
   padding-top: 5rem;
-}
-
-/* EMAIL */
-.contact-email {
-  display: inline-block;
-  padding: rem 1.5rem;
-  border: 1px solid var(--color-black);
-  border-radius: 3px;
-  color: var(--color-black);
-  transition: all 0.2s ease;
-}
-
-.contact-email:hover {
-  background: var(--color-black);
-  color: var(--color-white);
 }
